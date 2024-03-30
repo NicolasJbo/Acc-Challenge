@@ -1,0 +1,95 @@
+.container-worker{
+    width: 100vw;
+    height: 450px;
+    background-color: #f2f5fa;
+    display: flex;
+    align-items: center;
+   
+}
+.left-content{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../../assets/follow-us/img_woloxer.png');
+    background-size: cover; 
+   
+}
+.right-content{
+    color: #1b263c;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.primary-color{
+    color: var(--primary-color);
+}
+.secondary-color{
+color: var(--secondary-color);
+}
+.logo-twitter{
+    height: 35px;
+}
+.social-media{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 20px;
+    color: white;
+}
+
+.right-content p{
+    font-size: 42px;
+    font-weight: 500;
+    padding-left:90px;
+    padding-right: 70px;
+}
+
+  /* Media queries */
+@media only screen and (max-width: 768px) {
+    .container-worker {
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+    }
+ 
+    .left-content,
+    .right-content {
+        width: 100%;
+        height: auto;
+        
+    }
+
+    .right-content p {
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
+    }
+
+    .btn {
+        width: 150px;
+        margin: 30px;
+    }
+
+}
+
+@media only screen and (max-width: 576px) {
+    .left-content {
+        background-size: cover; 
+    }
+
+    
+    .right-content p {
+        font-size: 32px;
+        padding: 20px;
+    }
+    .btn{
+        margin: 30px;
+    }
+}

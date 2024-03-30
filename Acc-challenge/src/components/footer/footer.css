@@ -8,6 +8,7 @@
     background-image: url('../../assets/footer/Bg_Footer.png');
     background-repeat: no-repeat;
     padding: 20px;
+    justify-content: center;
    
 }
 .container-footer .btn{

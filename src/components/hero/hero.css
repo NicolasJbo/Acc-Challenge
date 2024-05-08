@@ -1,6 +1,6 @@
 .container-hero{
     color: #1b263c;
-    width: 100vw;
+    /* width: 100%; */
     height: 450px;
  /*    border:  1px solid #000; */
     background-color: none;
@@ -10,8 +10,6 @@
     margin-top: 100px;
 }
 .left-content-hero{
-    width: 50%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -20,8 +18,6 @@
     background-image: none;
 }
 .right-content-hero{
-    width: 50%;
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,7 +49,6 @@
  
     .left-content-hero,
     .right-content-hero {
-        width: 100%;
         height: auto;
         
     }

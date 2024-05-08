@@ -4,11 +4,17 @@ import Hero from './components/hero/hero.jsx'
 import Workers from './components/woloxWorker/workers.jsx'
 import './index.css'
 import Navbar from './components/navbar/navbar.jsx'
+import Footer from './components/footer/footer.jsx'
+import Benefit from './components/benefit/benefit.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Navbar>  </Navbar>
-  <Hero></Hero>
-  <Workers></Workers>
+    <div className="container">
+      <Navbar></Navbar>
+      <Hero></Hero>
+      <Workers></Workers>
+      <Benefit></Benefit>
+      <Footer></Footer>
+    </div>
   </React.StrictMode>,
 )

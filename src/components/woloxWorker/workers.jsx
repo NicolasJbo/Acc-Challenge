@@ -1,4 +1,3 @@
-import React from 'react';
 import './workers.css';
 import TwitterLogo from '../../assets/follow-us/twitter.png';
 
@@ -16,7 +15,9 @@ const Workers = () => {
             <button type="button" className='btn'> Seguinos</button>
         </div>
         <div className="right-content">
-            <p>Trabajamos para <span className='primary-color'> convertir</span> <span className='secondary-color'>ideas </span>en productos.</p>
+          <div className="text-column">
+            Trabajamos para <span className='primary-color'> convertir</span> <span className='secondary-color'>ideas </span>en productos.
+          </div>
         </div>
     </div>
   );

@@ -1,11 +1,8 @@
 .container-navbar{
-    width: 100vw;
     height: 100px;
     display: flex;
     align-items: center;
-    position: fixed;
-    top: 0px;
-    background-color: white;
+    position: sticky;
 }
 .primary-color{
     color: var(--primary-color);
@@ -18,7 +15,7 @@ color: var(--secondary-color);
     color: var(--secondary-color);
     padding: 2px;
     margin: -5px;
-    padding-left: 47px;
+    padding-left: 55px;
 }
 .container-navbar .btn:hover{
     color: var(--normal-color);

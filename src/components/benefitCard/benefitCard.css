@@ -1,0 +1,9 @@
+.benefit-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.benefit-card-img{
+    width: 90px;
+    height: 90px;
+}

@@ -1,0 +1,32 @@
+.title-header{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 400;
+}
+.benefits-list{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.container-benefit{
+    width: 100vw;
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    flex-direction: column;
+}
+
+/*Media queries*/
+@media only screen and (max-width: 768px) {
+    .benefits-list {
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .title-header{
+        font-size: 25px;
+    }
+}

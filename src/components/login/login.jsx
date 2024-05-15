@@ -27,10 +27,7 @@ const Login = () => {
 
         return (
             <>
-                <div className="background">
-                    <div className="shape"></div>
-                    <div className="shape"></div>
-                </div>
+                <div className="login-container">               
                 <form>
                     <h3>Login Here</h3>
 
@@ -42,6 +39,7 @@ const Login = () => {
 
                     <button onClick={login}>Log In</button>
                 </form>
+                </div>
             </>
         );
 }

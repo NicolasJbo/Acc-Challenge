@@ -1,3 +1,21 @@
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    
+    --primary-color: #97cf00; 
+    --secondary-color: #00a9e5;
+    --normal-color : #1b263c;
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    
+  }
 *,
 *:before,
 *:after{
@@ -5,8 +23,8 @@
     margin: 0;
     box-sizing: border-box;
 }
-body{
-    background-color: var(--normal-color);
+.login-container{
+    background-color: var(--normal-color) !important ;
 }
 form{
     height: 520px;

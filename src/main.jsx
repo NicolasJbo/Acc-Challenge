@@ -1,22 +1,18 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import Hero from './components/hero/hero.jsx'
-import Workers from './components/woloxWorker/workers.jsx'
-import './index.css'
-import Navbar from './components/navbar/navbar.jsx'
-import Footer from './components/footer/footer.jsx'
-import Benefit from './components/benefit/benefit.jsx'
-import Login from './components/login/login.jsx'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import LandingPage from './components/landingPage/LandingPage';
+import Login from './components/login/login';
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <div className="container">
-     {/*  <Navbar></Navbar>
-      <Hero></Hero>
-      <Workers></Workers>
-      <Benefit></Benefit>
-      <Footer></Footer> */}
-    </div>
-    <Login></Login>
-  </React.StrictMode>,
-)
+ReactDOM.render(
+  <Router>
+  
+      <Routes>
+        <Route path="/login" element={<Login />} />
+        <Route path="/home" element={<LandingPage />} />
+        <Route path="*" element={<Navigate to="/home"/>} /> 
+      </Routes>
+ 
+  </Router>,
+  document.getElementById('root')
+);

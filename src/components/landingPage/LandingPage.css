@@ -52,8 +52,8 @@
     line-height: 1.1;
   }
   .container{
-    background-color: white;
-    margin: auto;
+/*     background-color: white;
+ */    margin: auto;
     display: flex;
     flex-direction: column;
     width: 100%;

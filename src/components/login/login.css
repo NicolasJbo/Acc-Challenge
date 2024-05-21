@@ -24,7 +24,8 @@
     box-sizing: border-box;
 }
 .login-container{
-    background-color: var(--normal-color) !important ;
+    background-color: var(--normal-color)  ;
+    height: 100vh;
 }
 form{
     height: 520px;
@@ -84,4 +85,16 @@ button{
     font-weight: 600;
     border-radius: 5px;
     cursor: pointer;
+}
+.home-btn{
+    display: flex;
+    background-color: var(--secondary-color);
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    border-radius: 40px;
+    position: absolute;
+    top: 136px;
+    left: 500px;
 }

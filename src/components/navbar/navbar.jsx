@@ -1,6 +1,6 @@
 import React from 'react';
-import './navbar.css';
 import { Link } from 'react-router-dom';
+import './navbar.css';
 
 const Navbar = () => {
 
@@ -10,7 +10,7 @@ const Navbar = () => {
         <ul>
             <li>Inicio</li>
             <li>Beneficios</li>
-           <Link to="/login"> <li className='btn' >Login </li></Link>
+           <Link to="/login" style={{ textDecoration: 'none' }}> <li className='btn' >Login </li></Link>
         </ul>
     </div>
   );

@@ -21,6 +21,12 @@
 .secondary-color{
     color: var(--secondary-color);
 }
+.text-end{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+
 
   /* Media queries */
 @media only screen and (max-width: 768px) {

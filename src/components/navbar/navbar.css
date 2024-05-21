@@ -40,6 +40,10 @@ ul{
 li{
     list-style: none;
 }
+.home-btn-nav:hover{
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
 
 @media only screen and (max-width: 1330px) {
     .container-navbar p {

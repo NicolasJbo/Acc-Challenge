@@ -95,6 +95,40 @@ button{
     height: 50px;
     border-radius: 40px;
     position: absolute;
-    top: 136px;
-    left: 500px;
+    transform: translate(-50%, -50%);
+    top: 21%;
+    left: 19%;
 }
+.home-btn:hover{
+    background-color: var(--primary-color);
+    color: var(--normal-color);
+}
+
+@keyframes moveBtnDown {
+    from {
+      top: 5%; 
+    }
+    to {
+      top: 21%; 
+    }
+  }
+  @keyframes moveBtnUp {
+      from {
+        top: 21%; 
+      }
+      to {
+        top: 5%; 
+      }
+    }
+  @media only screen and (max-width: 1330px) {
+      .home-btn{
+           animation: moveBtnDown 1.5s forwards; 
+        }
+    }
+    
+    @media only screen and (max-width: 700px) {
+    .home-btn{
+       animation: moveBtnUp 1.5s forwards;
+    }
+}
+

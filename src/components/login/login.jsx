@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import './login.css';
-import { Link } from 'react-router-dom';
+import { Link, redirect, useNavigate } from 'react-router-dom';
 
 const Login = () => {
         const [username, setUsername] = useState('pepe');
         const [password, setPassword] = useState('');
-
+        const navigate = useNavigate();
     
 
         function handleUsername(e) {
@@ -19,6 +19,8 @@ const Login = () => {
         function login() {
             if (username === 'nico' && password === '1234') {
                 localStorage.setItem('user', JSON.stringify({ username, password }));
+                navigate("/pokemon")
+                
             }else{
                 alert('Usuario o contraseña incorrectos');
             }
@@ -29,8 +31,9 @@ const Login = () => {
         return (
             <>
                 <div className="login-container">           
-                <div className='home-btn'>
-                    <Link to="/home" style={{ textDecoration: 'none' }}>Home</Link></div>    
+                <Link to="/home" style={{ textDecoration: 'none',color: 'black' }}> 
+                    <div className='home-btn'>Home </div>  
+                </Link>
                 <form>
                     <h3>Login Here</h3>
 

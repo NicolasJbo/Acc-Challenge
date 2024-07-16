@@ -1,6 +1,6 @@
 import { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import './login.css';
-import { Link, redirect, useNavigate } from 'react-router-dom';
 
 const Login = () => {
         const [username, setUsername] = useState('pepe');
@@ -34,14 +34,14 @@ const Login = () => {
                 <Link to="/home" style={{ textDecoration: 'none',color: 'black' }}> 
                     <div className='home-btn'>Home </div>  
                 </Link>
-                <form>
+                <form className='login-form'>
                     <h3>Login Here</h3>
 
                     <label>Username</label>
-                    <input type="text" placeholder="nico" id="username" onChange={handleUsername}></input>
+                    <input className='login-input' type="text" placeholder="nico" id="username" onChange={handleUsername}></input>
 
                     <label>Password</label>
-                    <input type="password" placeholder="1234" id="password" onChange={handlePassword}></input>
+                    <input className='login-input' type="password" placeholder="1234" id="password" onChange={handlePassword}></input>
 
                     <button onClick={login}>Log In</button>
                 </form>

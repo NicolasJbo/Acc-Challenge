@@ -14,7 +14,6 @@ const SearchInput = ({search}) =>{
             alert('mas de 1 caracter')
            return;
         }else {
-        setInputValue('pikachu');
         search(inputValue);
         }
     }

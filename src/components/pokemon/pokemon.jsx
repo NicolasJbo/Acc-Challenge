@@ -1,14 +1,19 @@
 import usePokeFetch from "../../Hooks/usePokeFetch";
+import { usePoke } from "../../context/pokeContext";
 import PokeList from "../PokeList/PokeList";
 import SearchInput from "../SearchInput/SearchInput";
 import Navbar from "../navbar/navbar";
 import "./pokemon.css";
 const Pokemon = () => {
 
+  const { setPokeData } = usePoke();
   const { pokemons, isLoading ,onError,getPokeEvolution,} = usePokeFetch();
 
   async function handleSearch(name){  
       await getPokeEvolution(name);
+      setPokeData(name, pokemons);
+      console.log("pokemons search:",pokemons);
+
   }
 
   return (<>

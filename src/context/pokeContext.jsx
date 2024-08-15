@@ -7,11 +7,11 @@ export const usePoke = () => useContext(PokeContext);
 
 // eslint-disable-next-line react/prop-types
 export const PokeProvider = ({ children }) => {
-    const [pokeSearch, setPoke] = useState({});
+    const [pokeSearch, setPoke] = useState(null);
 
-    const setPokeData = (pokeSearch, pokemon) => {       
-        localStorage.setItem('Pokesearch', JSON.stringify({ pokeSearch, pokemon }));
-        setPoke({ pokeSearch, pokemon });
+    const setPokeData = ( pokemon) => {      
+        console.log("pokemon:",pokemon); 
+        setPoke( pokemon );
     };
 
     const getPokeData = () => {
@@ -19,7 +19,7 @@ export const PokeProvider = ({ children }) => {
     };
 
     return (
-        <PokeContext.Provider value={{ setPokeData, getPokeData }}>
+        <PokeContext.Provider value={{ setPokeData, getPokeData,pokeSearch}}>
             {children}
         </PokeContext.Provider>
     );

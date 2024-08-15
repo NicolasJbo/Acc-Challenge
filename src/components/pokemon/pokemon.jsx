@@ -6,16 +6,18 @@ import Navbar from "../navbar/navbar";
 import "./pokemon.css";
 const Pokemon = () => {
 
-  const { setPokeData } = usePoke();
+  const { setPokeData,pokeSearch } = usePoke();
   const { pokemons, isLoading ,onError,getPokeEvolution,} = usePokeFetch();
 
   async function handleSearch(name){  
-      await getPokeEvolution(name);
-      setPokeData(name, pokemons);
+     await getPokeEvolution(name);
+     if(pokemons!==null && pokemons!==undefined){
+        setPokeData(pokemons);
       console.log("pokemons search:",pokemons);
+     }
 
   }
-
+  
   return (<>
   <div className="container-pokemon">
             <Navbar></Navbar>            
@@ -34,6 +36,9 @@ const Pokemon = () => {
                     { pokemons &&
                         <PokeList pokemon={pokemons}></PokeList>
                     }
+                     {pokeSearch && !pokemons && (
+                    <PokeList pokemon={pokeSearch} />
+                    )}
                 </div>
           
 

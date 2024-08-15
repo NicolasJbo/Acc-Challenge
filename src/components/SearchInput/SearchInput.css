@@ -1,0 +1,17 @@
+.searchForm{
+    background-color: rgba(255, 0, 0, 0.171);
+}
+.searchInput{
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(37, 37, 37, 0.445);
+    border-radius: 3px;
+    padding: 0 10px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.searchInput ::selection{
+    border: 2px solid black;  
+}

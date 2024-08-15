@@ -1,0 +1,134 @@
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    
+    --primary-color: #97cf00; 
+    --secondary-color: #00a9e5;
+    --normal-color : #1b263c;
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    
+  }
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.login-container{
+    background-color: var(--normal-color)  ;
+    height: 100vh;
+}
+.login-form{
+    height: 520px;
+    width: 400px;
+    background-color: rgba(255,255,255,0.13);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+}
+.login-form *{
+    font-family: 'Poppins',sans-serif;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+.login-form h3{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+}
+
+label{
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.login-input{
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255,255,255,0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+::placeholder{
+    color: #e5e5e5;
+}
+button{
+    margin-top: 50px;
+    width: 100%;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.home-btn{
+    display: flex;
+    background-color: var(--secondary-color);
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    border-radius: 40px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 21%;
+    left: 19%;
+}
+.home-btn:hover{
+    background-color: var(--primary-color);
+    color: var(--normal-color);
+}
+
+@keyframes moveBtnDown {
+    from {
+      top: 5%; 
+    }
+    to {
+      top: 21%; 
+    }
+  }
+  @keyframes moveBtnUp {
+      from {
+        top: 21%; 
+      }
+      to {
+        top: 5%; 
+      }
+    }
+  @media only screen and (max-width: 1330px) {
+      .home-btn{
+           animation: moveBtnDown 1.5s forwards; 
+        }
+    }
+    
+    @media only screen and (max-width: 700px) {
+    .home-btn{
+       animation: moveBtnUp 1.5s forwards;
+    }
+}
+

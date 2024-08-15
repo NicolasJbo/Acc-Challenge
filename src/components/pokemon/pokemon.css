@@ -1,0 +1,34 @@
+.container-pokemon{
+    background-color: var(--secondary-color);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.searchBox{
+    display: flex;
+    margin-top: 105px;
+    height: 15%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.tableBox{
+    margin-top: 5px;
+    display: flex;
+    height: 75%;
+    background-color: rgba(0, 0, 255, 0.205);
+    width: 100%;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+:root{
+
+    
+  --type-color-earth:rgb(131, 76, 5);
+  --type-color-ligth:yellow;
+  --type-color-water:rgb(38, 115, 202);
+  --type-color-fire:rgba(216, 73, 73, 0.966);
+  --type-color-psychic:#ec3c7c;
+}

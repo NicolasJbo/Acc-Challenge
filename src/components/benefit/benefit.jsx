@@ -13,7 +13,7 @@ const Benefit = () => {
         {"title":"BRAIN","description":"Trabajamos en ultimas tecnologías"},];
 
 return (
-    <div className="container-benefit">
+    <div className="container-benefit" id='benefit'>
         <p className='title-header'>Entre los beneficios que ofrecemos se encuentras <span style={{ color: '#00a9e5' }}>;)</span></p>
         <div className='benefits-list'>
             {

@@ -6,15 +6,12 @@ import Navbar from "../navbar/navbar";
 import "./pokemon.css";
 const Pokemon = () => {
 
-  const { setPokeData,pokeSearch } = usePoke();
+    const { pokeSearch } = usePoke();
   const { pokemons, isLoading ,onError,getPokeEvolution,} = usePokeFetch();
 
   async function handleSearch(name){  
      await getPokeEvolution(name);
-     if(pokemons!==null && pokemons!==undefined){
-        setPokeData(pokemons);
-      console.log("pokemons search:",pokemons);
-     }
+
 
   }
   

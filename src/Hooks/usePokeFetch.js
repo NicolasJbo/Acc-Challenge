@@ -1,11 +1,13 @@
 import { useState } from 'react';
 import PokeClass from '../Utils';
+import { usePoke } from '../context/pokeContext';
 
 const usePokeFetch = () => {
 
     const [pokemons, setpokemons] = useState();
     const [isLoading, setIsLoading] = useState(false);
     const [onError, setError] = useState('');
+    const { setPokeData } = usePoke  ();
     let pokke = new PokeClass();
 
 
@@ -61,6 +63,7 @@ const usePokeFetch = () => {
             }
 
             setpokemons(pokke);
+            setPokeData(pokke);
         } catch (error) {
             setError(error.message);
             setpokemons();
